@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Learn — Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a href="index.html">All Courses</a>
+    <a href="development.html">Programming & Software Development</a>
+    <a href="ai.html">Artificial Intelligence & Data Science</a>
+    <a href="csa.html">Computer Systems & Architecture</a>
+    <a href="dbms.html">Database & Data Management</a>
+    <a href="nc.html">Networking & Cybersecurity</a>
+    <a href="wamt.html">Web & Mobile Technologies</a>
+    <a href="et.html">Emerging Technologies</a>
+    <a href="mt.html">Mathematics & Theory</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- Custom page content; the script moves this into the main layout area. -->
+    <section data-yl-content class="yl-contact">
+        <div class="yl-contact-grid">
+            <div class="yl-contact-info">
+                <h2>Get in touch</h2>
+                <p>Questions, feedback, or a playlist you'd like added? Send a note and we'll get back to you.</p>
+                <ul class="yl-contact-list">
+                    <li><span class="ic">✉️</span> hello@youlearn.example</li>
+                    <li><span class="ic">💬</span> Response within 1–2 business days</li>
+                    <li><span class="ic">🌐</span> youlearn.example</li>
+                </ul>
+            </div>
+
+            <form class="yl-contact-form" id="ylContactForm" novalidate>
+                <div class="yl-field">
+                    <label for="cName">Name</label>
+                    <input type="text" id="cName" name="name" placeholder="Your name" required>
+                </div>
+                <div class="yl-field">
+                    <label for="cEmail">Email</label>
+                    <input type="email" id="cEmail" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="yl-field">
+                    <label for="cMessage">Message</label>
+                    <textarea id="cMessage" name="message" rows="5" placeholder="How can we help?" required></textarea>
+                </div>
+                <button type="submit" class="yl-action" style="max-width:200px">Send message</button>
+                <p class="yl-form-note" id="ylFormNote" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
